@@ -1,0 +1,8 @@
+.danger {
+    &-bg {
+        background-color: var(--v-colour-red-400);
+    }
+    &-text {
+        color: var(--v-colour-red-400);
+    }
+}

@@ -1,0 +1,40 @@
+.areas-covered-section-container {
+    position: relative;
+    // background: url(https://img.freepik.com/premium-vector/location-tracker-dashboard-city-street-road-with-pins-map-alternative-ways-isometric-street_753943-288.jpg?w=2000) center 35% / cover no-repeat;
+    // background: url(https://img.freepik.com/premium-vector/abstract-navigation-plan-highlights-poi-including-city-streets-blocks-city-map-featuring_753943-371.jpg?w=2000) center 35% / cover no-repeat;
+    // Navigation to poi. Simple scheme of isometric city. Location tracks dashboard. Generic city map with signs of streets @Aqi49
+    // https://www.istockphoto.com/portfolio/Aqi?mediatype=illustration
+    background: url(https://img.freepik.com/premium-vector/isometric-map-with-pins-location-streets-marked-with-different-colors-pins-connected-by-lines-as_753943-483.jpg?w=2000) center 35% / cover no-repeat fixed;
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgb(255 255 255 / .5);
+        backdrop-filter: blur(2.5px);
+    }
+
+    .areas-covered-section {
+        backdrop-filter: blur(5px);
+        background-color: rgb(255 255 255 / 0.35);
+    }
+    .areas-covered-feature-container {
+        display: flex;
+
+        .locations-container {
+            display: flex;
+            gap: 5em;
+        
+            ol {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                list-style: none;
+                padding: 0;
+                width: 100%;
+        
+                > li {
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}

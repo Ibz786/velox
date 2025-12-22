@@ -1,0 +1,48 @@
+.why-choose-us-section {
+    &-details {
+        position: relative;
+        width: 65%;
+    }
+
+    &-container {
+        background-color: #fafafa;
+
+        .options-list {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5em;
+            list-style: none;
+            padding: 0;
+            margin-block: 5em;
+
+            &-item {
+                .option-icon {
+                    width: 70px;
+                    height: 70px;
+                    padding: 15px;
+                    background-color: #eceafa;
+                    border-radius: 10px;
+                    color: hsl(246, 61%, 40%);
+                    box-shadow: 0 1px 8px -3px hsl(246, 61%, 40%);
+                }
+                .option-title {
+                    padding-block: 20px 10px;
+                    letter-spacing: 0.5px;
+                }
+                .option-description {
+                    font-size: 0.9em;
+                    color: var(--v-colour-grey-dark);
+                }
+            }
+        }
+    }
+
+    &-img-container {
+        position: absolute;
+        right: -7em;
+        bottom: 0;
+
+        > img { width: 115%; }
+    }
+}

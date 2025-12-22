@@ -1,0 +1,82 @@
+@use './variables';
+@use './typography';
+@use './animations';
+@use '../utils/colour';
+@use '../utils/custom/counting-number';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+* {
+    font-family: var(--v-font);
+}
+
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+html, body, #app {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: var(--v-font-heading);
+
+    > span {
+        font-family: var(--v-font-heading);
+    }
+}
+
+h1 { font-size: 5em; }
+h2 { font-size: 4em; }
+h3 { font-size: 3em; }
+h4 { font-size: 1.5em; }
+h5 { font-size: 1.125em; }
+
+.feature-heading {
+    padding-block: 15px;
+}
+
+.sub-heading {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+
+    > span {
+        position: relative;
+        top: 5px;
+        display: flex;
+        flex-direction: column;
+        color: #6e11b0;
+
+        &::after {
+            content: '';
+            margin-top: 5px;
+            height: 5px;
+            width: 50%;
+            background: #6e11b0;
+            border-radius: 16px;
+        }
+    }
+}
+
+.title-description {
+    color: var(--v-colour-grey-dark);
+}
+
+.uppercase {
+    text-transform: uppercase;
+}

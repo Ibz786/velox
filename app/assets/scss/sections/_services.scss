@@ -1,0 +1,127 @@
+.services-list {
+    --padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin-top: 3em;
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        border-radius: 10px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -2px rgba(0, 0, 0, .05);
+
+        &:hover {
+            .service-img-container > img {
+                transform: scale(1.2);
+            }
+        }
+
+        .service-img-container {
+            overflow: hidden;
+            > img {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                width: 100%;
+                transform: scale(1);
+                will-change: transform;
+                transition: transform 350ms ease;
+            }
+        }
+
+        .service-details {
+            display: flex;
+            flex-direction: column;
+            padding: var(--padding);
+            gap: 15px;
+
+            .service-title {
+                letter-spacing: 0.5px;
+            }
+            .service-description {
+                color: var(--v-colour-grey-dark);
+            }
+        }
+
+        .service-items {
+            margin-bottom: 10px;
+        }
+
+        .service-action {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: var(--padding);
+            background-color: hsl(246, 61%, 40%);
+            color: hsl(268.58deg 100% 95.47%);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+.pills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    gap: 12px 10px;
+
+    > .pill {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 7.5px;
+        background-color: rgb(237 242 247 / 1);
+        font-size: 14px;
+        font-weight: 500;
+        padding: 6px 12px;
+        border-radius: 50px;
+
+        &.emergency {
+            background-color: var(--v-colour-red-400);
+            color: var(--v-colour-red-100);
+        }
+        &.damp {
+            background-color: var(--v-colour-blue-900);
+            color: var(--v-colour-blue-100);
+        }
+        &.leak {
+            background-color: var(--v-colour-sky-400);
+            color: var(--v-colour-sky-100);
+        }
+        &.repair {
+            background-color: var(--v-colour-yellow-200);
+        }
+        &.blockage {
+            background-color: var(--v-colour-yellow-300);
+        }
+        &.overflow {
+            background-color: var(--v-colour-blue-400);
+            color: var(--v-colour-blue-100);
+        }
+        &.cleaning {
+            background-color: var(--v-colour-green-400);
+            color: var(--v-colour-green-800);
+        }
+        &.manhole {
+            background-color: var(--v-colour-slate-400);
+            color: var(--v-colour-slate-100);
+        }
+        &.pipes {
+            // Slate 100 / 500
+            background-color: #62748e;
+            color: #f9f3f4;
+        }
+        &.gully {
+            // Orange
+            background-color: #ff6900;
+            color: #fff7ed;
+        }
+    }
+}

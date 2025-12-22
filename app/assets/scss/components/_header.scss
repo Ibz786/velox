@@ -1,0 +1,36 @@
+header.header {
+    position: sticky;
+    top: 0;
+    color: hsla(246, 61%, 40%);
+    // background-color: oklch(39.8% 0.195 277.366);
+    // background-color: hsl(246deg 61% 90% / 50%);
+    background-color: rgb(251 251 253 / 50%);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 1px 12px -3px hsla(246, 61%, 85%);
+    z-index: 100;
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 80rem;
+        margin-inline: auto;
+        padding: 15px 24px;
+
+        > ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 25px;
+            list-style: none;
+            padding: 0;
+
+            > li {
+                font-size: 1.25em;
+                padding: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}

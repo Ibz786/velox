@@ -1,0 +1,90 @@
+.footer-section-container {
+    background-color: hsl(246, 61%, 40%);
+    color: hsl(268.58, 100%, 95.47%);
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+
+        .footer-features {
+            display: flex;
+            gap: 5em;
+
+            > * {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .footer-header {
+                margin-bottom: 10px;
+                letter-spacing: .75px;
+            }
+        }
+
+        a {
+            color: hsl(268.58, 100%, 95.47%);
+            text-decoration: none;
+            text-underline-offset: 3px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .footer-velox {
+            display: flex;
+            align-items: center;
+            gap: 3em;
+            line-height: 28px;
+            > img {
+                width: 350px;
+            }
+        }
+        
+        .footer-about-velox {
+            address {
+                font-style: normal;
+                line-height: 26px;
+            }
+            
+        }
+
+        .footer-services {
+            ol {
+                column-count: 2;
+                column-fill: balance;
+                list-style: none;
+                padding: 0;
+
+                > li {
+                    padding: 0 10px 15px 0;
+                }
+            }
+        }
+
+        .social-icon-container {
+            position: relative;
+            left: -10px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 25px;
+
+            
+            .social-icon {
+                display: inline-flex;
+                align-items: center;
+                font-size: 28px;
+                padding: 10px;
+                cursor: pointer;
+            }
+        }
+
+        .footer-copyright {
+            border-top: 1px solid;
+            padding-top: 25px;
+        }
+    }
+}

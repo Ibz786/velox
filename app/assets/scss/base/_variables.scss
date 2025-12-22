@@ -1,0 +1,95 @@
+:root {
+    --v-font: 'Lexend', system-ui, -apple-system, BlinkMacSystemFont, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --v-font-heading: 'Fredoka', sans-serif;
+
+    --v-btn-radius: 40px;
+
+    --v-colour-white: #ffffff;    
+    --v-colour-white-100: #efefef;
+
+    --v-colour-grey-soft-50: hsl(0deg 0% 96.86%);
+    --v-colour-grey-soft-150: hsl(0deg 0% 83.14%);
+
+    --v-colour-grey-dark: hsl(156deg 2.04% 48.04%);
+
+    --v-colour-black-700: hsl(0deg, 0%, 30%);
+
+    --v-colour-green: #00c16a;
+
+    /* Colour - Red (Tailwind) */
+    --v-colour-red-50: #fef2f2;
+    --v-colour-red-100: #ffe2e2;
+    --v-colour-red-300: #ffa2a2;
+    --v-colour-red-400: #ff6467;
+    --v-colour-red-500: #fb2c36;
+    --v-colour-red-600: #e7000b;
+    --v-colour-red-700: #c10007;
+    --v-colour-red-800: #9f0712;
+    --v-colour-red-900: #82181a;
+    --v-colour-red-950: #460809;
+
+    /* Colour - Sky Blue (Tailwind) */
+    --v-colour-sky-50: #f0f9ff;
+    --v-colour-sky-100: #dff2fe;
+    --v-colour-sky-200: #b8e6fe;
+    --v-colour-sky-300: #74d4ff;
+    --v-colour-sky-400: #00bcff;
+    --v-colour-sky-500: #00a6f4;
+    --v-colour-sky-600: #0084d1;
+    --v-colour-sky-700: #0069a8;
+    --v-colour-sky-800: #00598a;
+    --v-colour-sky-900: #024a71;
+    --v-colour-sky-950: #052f4a;
+
+    /* Colour - Blue (Tailwind) */
+    --v-colour-blue-50: #eff6ff;
+    --v-colour-blue-100: #dbeafe;
+    --v-colour-blue-200: #bedbff;
+    --v-colour-blue-300: #8ec5ff;
+    --v-colour-blue-400: #51a2ff;
+    --v-colour-blue-500: #2b7fff;
+    --v-colour-blue-600: #155dfc;
+    --v-colour-blue-700: #1447e6;
+    --v-colour-blue-800: #193cb8;
+    --v-colour-blue-900: #1c398e;
+    --v-colour-blue-950: #162556;
+
+    /* Colour - Yellow (Tailwind) */
+    --v-colour-yellow-50: #fefce8;
+    --v-colour-yellow-100: #fef9c2;
+    --v-colour-yellow-200: #fff085;
+    --v-colour-yellow-300: #ffdf20;
+    --v-colour-yellow-400: #fdc700;
+    --v-colour-yellow-500: #f0b100;
+    --v-colour-yellow-600: #d08700;
+    --v-colour-yellow-700: #a65f00;
+    --v-colour-yellow-800: #894b00;
+    --v-colour-yellow-900: #733e0a;
+    --v-colour-yellow-950: #432004;
+
+    /* Colour - Green (Tailwind) */
+    --v-colour-green-50: #f0fdf4;
+    --v-colour-green-100: #dcfce7;
+    --v-colour-green-200: #b9f8cf;
+    --v-colour-green-300: #7bf1a8;
+    --v-colour-green-400: #05df72;
+    --v-colour-green-500: #00c951;
+    --v-colour-green-600: #00a63e;
+    --v-colour-green-700: #008236;
+    --v-colour-green-800: #016630;
+    --v-colour-green-900: #0d542b;
+    --v-colour-green-950: #032e15;
+
+    /* Colour - Slate (Tailwind) */
+    --v-colour-slate-50: #fcf9fa;
+    --v-colour-slate-100: #f9f3f4;
+    --v-colour-slate-200: #e2e8f0;
+    --v-colour-slate-300: #cad5e2;
+    --v-colour-slate-400: #90a1b9;
+    --v-colour-slate-500: #62748e;
+    --v-colour-slate-600: #45556c;
+    --v-colour-slate-700: #314158;
+    --v-colour-slate-800: #1d293d;
+    --v-colour-slate-900: #0f172b;
+    --v-colour-slate-950: #020618;
+}

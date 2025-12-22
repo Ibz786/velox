@@ -1,0 +1,44 @@
+.accordion {
+    border: 1px solid hsl(246, 61%, 50%);
+    border-radius: 10px;
+
+    &[open] {
+        > summary {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+
+    .accordion-toggle {
+        transform: rotate(0deg);
+        transition: transform 500ms ease;
+        will-change: transform;
+
+        &.rotate {
+            transform: rotate(180deg);
+        }
+    }
+    
+    > summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px;
+        background-color: hsl(246, 61%, 40%);
+        color: hsl(268.58deg 100% 95.47%);
+        padding: 25px;
+        cursor: pointer;
+
+        &::marker {
+            content: '';
+        }
+    }
+
+    > p.description {
+        padding: 25px;
+        background-color: hsl(246, 61%, 98%);
+        color: hsl(268.58, 100%, 40.47%);
+        border-bottom-left-radius: 9px;
+        border-bottom-right-radius: 9px;
+    }
+}

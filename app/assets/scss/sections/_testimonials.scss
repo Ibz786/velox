@@ -1,0 +1,39 @@
+.testimonials-section-container {
+    // background-color: #ebebeb;
+    background-color: #fafafa;
+
+    .testimonials-section {
+        padding-bottom: 0;
+    }
+    .testimonials-section-feature-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5em;
+        padding-block: 5em 10em;
+        mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent 100%);
+        overflow: hidden;
+
+        .testimonials-section-feature {
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+            
+            &:hover {
+                .testimonials-container,
+                .testimonials-container.reversed{
+                    animation-play-state: paused;
+                }
+            }
+
+            .testimonials-container {
+                animation: scroll-left 30s linear infinite;
+                will-change: transform;
+    
+                &.reversed {
+                    animation: scroll-left 30s linear reverse infinite;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,64 @@
+.btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .625em;
+    font-size: 1em;
+    font-weight: 600;
+    background-color: buttonface;
+    border: 1px solid buttonborder;
+    // padding: 0.5em 1.25em;
+    padding: .75em 1.5em;
+    border: 1px solid transparent;
+    border-radius: var(--v-btn-radius);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 350ms ease;
+    letter-spacing: 0.75px;
+
+    &-rounded {
+        border-radius: 8px;
+    }
+
+    &-thin {
+        font-size: 0.85em;
+    }
+
+    &-circle {
+        padding: 10px;
+        border-radius: 50%;
+        height: var(--btn-size, 2rem);
+        width: var(--btn-size, 2rem);
+        font-size: calc(var(--btn-size, 2rem) / 2.5);
+    }
+
+    &-default {
+        // background-color: oklch(14.5% 0 0);
+        background-color: hsl(246, 61%, 40%);
+        border-color: hsl(246, 61%, 40%);
+        // color: oklch(97% 0 0);
+        color: hsl(268.58deg 100% 95.47%);
+    }
+
+    &-white {
+        background-color: var(--v-colour-white);
+        border-color: var(--v-colour-grey-soft-150);
+        color: var(--v-colour-black-700);
+    }
+
+    &-success {
+        background-color: var(--v-colour-green);
+        color: var(--v-colour-white);
+    }
+
+    &-clear {
+        background-color: transparent;
+        border-color: transparent;
+        color: var(--v-colour-black-700);
+
+        &:not(:disabled):hover {
+            background-color: var(--v-colour-white-100);
+        }
+    }
+}

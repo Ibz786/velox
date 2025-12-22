@@ -1,0 +1,11 @@
+.rating-container {
+    display: inline-flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    gap: 3px;
+
+    .filled {
+        color: #ffcc00;
+    }
+}
