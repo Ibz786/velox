@@ -11,7 +11,7 @@
             <ul class="services-list">
                 <li class="services-list-item" v-for="service in services" :key="service.id">
                     <div class="service-img-container">
-                        <img :src="service.image" />
+                        <img :src="`/img/${service.image}`" />
                     </div>
                     <div class="service-details">
                         <h4 class="service-title">{{ service.title }}</h4>
@@ -37,7 +37,7 @@
     const services = [
         {
             id: 1,
-            image: '/img/sink.jpg',
+            image: 'sink.jpg',
             title: 'Plumbing',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
             badges: [
@@ -52,7 +52,7 @@
         },
         {
             id: 2,
-            image: '/img/drainage.jpg',
+            image: 'drainage.jpg',
             title: 'Drainage',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
             badges: [
@@ -67,7 +67,7 @@
         },
         {
             id: 3,
-            image: '/img/manhole.jpg',
+            image: 'manhole.jpg',
             title: 'Sewage',
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
             badges: [
