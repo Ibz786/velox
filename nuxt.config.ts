@@ -10,5 +10,6 @@ export default defineNuxtConfig({
         '~/assets/fonts/FontAwesome.Pro.7.1.0/css/all.css'
     ],
     compatibilityDate: '2025-07-15',
-    devtools: { enabled: true }
+    devtools: { enabled: true },
+    modules: ['@nuxtjs/seo']
 });

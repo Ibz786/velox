@@ -15,5 +15,11 @@
         ogUrl: 'https://veloxmaintenance247.com/',
         ogSiteName: 'Velox Maintenance 24/7',
         ogLocale: 'en_GB'
-    })
+    });
+
+    defineOgImageComponent('Nuxt', {
+        title: 'Home',
+        description: 'Your trusted local drainage and plumbing experts',
+        headline: 'Velox Maintenance 24 / 7'
+    });
 </script>
