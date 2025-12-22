@@ -11,7 +11,7 @@
             <ul class="services-list">
                 <li class="services-list-item" v-for="service in services" :key="service.id">
                     <div class="service-img-container">
-                        <img :src="`/img/${service.image}`" />
+                        <img :src="`${BASE}/img/${service.image}`" />
                     </div>
                     <div class="service-details">
                         <h4 class="service-title">{{ service.title }}</h4>
@@ -34,6 +34,7 @@
 <script setup lang="ts">
     import { MoveRight } from 'lucide-vue-next';
     
+    const BASE = process.env.NUXT_APP_BASE_URL ? `/${process.env.NUXT_APP_BASE_URL}` : '';
     const services = [
         {
             id: 1,
