@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "generate:gh-pages": "NUXT_APP_BASE_URL=/velox/ npx nuxt generate --preset github_pages"
   },
   "dependencies": {
     "lucide-vue-next": "^0.561.0",
