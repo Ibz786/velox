@@ -3,6 +3,7 @@
     <!-- <NuxtRouteAnnouncer /> -->
         <VHeader />
         <NuxtPage />
+        <CallNow />
         <VFooter />
     <!-- <NuxtWelcome /> -->
     </div>
