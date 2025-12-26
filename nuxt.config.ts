@@ -2,7 +2,9 @@
 export default defineNuxtConfig({
     app: {
         head: {
-            title: 'Velox Maintenance 24/7'
+            // title: 'Velox Maintenance 24/7'
+            titleTemplate: '%s | ' + process.env.NUXT_SITE_NAME,
+            title: process.env.NUXT_SITE_NAME
         }
     },
     css: [

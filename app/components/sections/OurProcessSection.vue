@@ -9,9 +9,9 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quibusdam aut expedita distinctio cumque quia dicta eius reiciendis et nihil?</p>
 
             <div class="process-section-feature-container">
-                <div class="process-img-container">
+                <!-- <div class="process-img-container">
                     <img src="/img/process.png" />
-                </div>
+                </div> -->
                 <progress-stepper class="stepper" />
             </div>
         </section>

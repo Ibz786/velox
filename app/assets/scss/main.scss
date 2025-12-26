@@ -2,12 +2,14 @@
 @use './mixins/breakpoints' as *;
 
 .container {
-    @include sm {
-        position: relative;
-        width: 100%;
-        max-width: 80rem;
-        margin-inline: auto;
-        padding: 0 24px;
-        padding-block: 10em;
+    // @include xxl {
+    position: relative;
+    width: 100%;
+    max-width: min(80%, 80rem);
+    margin-inline: auto;
+    padding: 10em 1.5em;
+    @include xl {
+        padding: 5em 1.5em;
     }
+    // }
 }

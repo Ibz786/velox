@@ -48,8 +48,10 @@
                 </div>
             </div>
             <div class="footer-velox">
-                    <img src="/img/vm-logo-2.png" />
-                    <p>At Velox Maintenance, we specialise in plumbing and drainage services throughout London. Our commitment to quality ensures reliable solutions with a focus on client satisfaction</p>
+                    <div class="velox-logo-container">
+                        <img src="/img/vm-logo-2.png" />
+                    </div>
+                    <p class="velox-footer-about">At Velox Maintenance, we specialise in plumbing and drainage services throughout London. Our commitment to quality ensures reliable solutions with a focus on client satisfaction</p>
                 </div>
                 <div class="footer-copyright">
                     <span>&copy;</span> 2025 Velox Maintenance 24 / 7 Ltd. All Rights Reserved

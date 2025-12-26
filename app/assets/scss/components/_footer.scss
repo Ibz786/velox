@@ -1,3 +1,5 @@
+@use '../mixins/breakpoints' as *;
+
 .footer-section-container {
     background-color: hsl(246, 61%, 40%);
     color: hsl(268.58, 100%, 95.47%);
@@ -9,12 +11,15 @@
 
         .footer-features {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             gap: 5em;
 
             > * {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
+                flex: 1;
             }
 
             .footer-header {
@@ -34,12 +39,28 @@
         }
 
         .footer-velox {
-            display: flex;
-            align-items: center;
+            display: grid;
+            grid-template-columns: auto 1fr;
             gap: 3em;
             line-height: 28px;
-            > img {
-                width: 350px;
+
+            @include md {
+                grid-template-columns: auto;
+            }
+
+            .velox-logo-container {
+                width: 300px;
+                align-self: center;
+                @include md {
+                    width: 100%;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+            .velox-footer-about {
+                align-self: center;
             }
         }
         

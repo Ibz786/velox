@@ -26,8 +26,8 @@
     // import { useTemplateRef } from 'vue';
 
     useSeoMeta({
-        title: 'Home - Velox Maintenance 24/7',
-        ogTitle: 'Home - Velox Maintenance 24/7',
+        title: 'Home',
+        ogTitle: 'Home',
         ogUrl: 'https://veloxmaintenance247.com/'
     });
 

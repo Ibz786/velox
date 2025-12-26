@@ -43,12 +43,12 @@
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit',
             badges: [
                 { label: 'Emergency', icon: 'fa-solid fa-triangle-exclamation', classes: 'emergency' },
-                { label: 'Installations', icon: 'fa-solid fa-person-digging' },
+                { label: 'Blockages', icon: 'fa-solid fa-road-barrier', classes: 'blockage' },
                 { label: 'Repairs', icon: 'fa-solid fa-screwdriver-wrench', classes: 'repair' },
+                { label: 'Pipes', icon: 'fa-solid fa-pipe-valve', classes: 'pipes' },
+                { label: 'Installations', icon: 'fa-solid fa-person-digging' },
                 { label: 'Damp', icon: 'fa-solid fa-disease', classes: 'damp' },
                 { label: 'Leaks', icon: 'fa-solid fa-droplet', classes: 'leak' },
-                { label: 'Blockages', icon: 'fa-solid fa-road-barrier', classes: 'blockage' },
-                { label: 'Pipes', icon: 'fa-solid fa-pipe-valve', classes: 'pipes' }
             ]
         },
         {
@@ -59,11 +59,11 @@
             badges: [
                 { label: 'Emergency', icon: 'fa-solid fa-triangle-exclamation', classes: 'emergency' },
                 { label: 'Blockages', icon: 'fa-solid fa-road-barrier', classes: 'blockage' },
-                { label: 'Backing up', icon: 'fa-solid fa-pump' },
                 { label: 'Repairs', icon: 'fa-solid fa-screwdriver-wrench', classes: 'repair' },
+                { label: 'Pipes', icon: 'fa-solid fa-pipe-valve', classes: 'pipes' },
+                { label: 'Backing up', icon: 'fa-solid fa-pump' },
                 { label: 'Clearance', icon: 'fa-solid fa-broom', classes: 'cleaning' },
                 { label: 'Gullys', icon: 'fa-solid fa-pipe-valve', classes: 'gully' },
-                { label: 'Pipes', icon: 'fa-solid fa-pipe-valve', classes: 'pipes' }
             ]
         },
         {
@@ -74,10 +74,11 @@
             badges: [
                 { label: 'Emergency', icon: 'fa-solid fa-triangle-exclamation', classes: 'emergency' },
                 { label: 'Blockages', icon: 'fa-solid fa-road-barrier', classes: 'blockage' },
+                { label: 'Repairs', icon: 'fa-solid fa-screwdriver-wrench', classes: 'repair' },
+                { label: 'Pipes', icon: 'fa-solid fa-pipe-valve', classes: 'pipes' },
                 { label: 'CCTV Surveys', icon: 'fa-solid fa-hose-reel' },
                 { label: 'Manholes', icon: 'fa-solid fa-manhole', classes: 'manhole' },
                 { label: 'Overflowing', icon: 'fa-solid fa-fill-drip', classes: 'overflow' },
-                { label: 'Pipes', icon: 'fa-solid fa-pipe-valve', classes: 'pipes' }
             ]
         }
     ];

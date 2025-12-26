@@ -19,9 +19,9 @@
                     </li>
                 </ul>
             </div>
-            <div class="why-choose-us-section-img-container">
+            <!-- <div class="why-choose-us-section-img-container">
                 <img src="/img/choose-us.png" />
-            </div>
+            </div> -->
         </section>
     </div>
 </template>

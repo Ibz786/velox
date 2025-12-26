@@ -1,3 +1,5 @@
+@use '../mixins/breakpoints' as *;
+
 header.header {
     position: sticky;
     top: 0;
@@ -10,27 +12,70 @@ header.header {
     z-index: 100;
     
     nav {
+        // position: relative;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        max-width: 80rem;
+        // max-width: 80rem;
+        max-width: min(90%, 80rem);
         margin-inline: auto;
         padding: 15px 24px;
 
-        > ul {
+        ul.nav-links {
             display: flex;
             flex-direction: row;
             align-items: center;
-            gap: 25px;
+            gap: 20px;
             list-style: none;
             padding: 0;
 
             > li {
-                font-size: 1.25em;
-                padding: 10px;
+                border-radius: 10px;
+                font-size: 1em;
+                letter-spacing: .25px;
+                padding: 10px 15px;
                 cursor: pointer;
+                // text-transform: uppercase;
+                font-weight: 600;
+                transition-property: background-color, color;
+                transition-duration: 350ms;
+                transition-timing-function: ease;
+
+                &:hover {
+                    background-color: hsla(246, 61%, 40%);
+                    color: hsl(268.58, 100%, 95.47%);
+                }
             }
+
+            &.responsive-menu {
+                display: flex !important;
+                position: absolute;
+                left: 0;
+                bottom: -12em;
+                flex-direction: column;
+                background: white;
+                width: 100%;
+                padding: 1em 2em;
+                border: 1px solid;
+                align-items: flex-start;
+
+                > li {
+                    width: 100%;
+                }
+            }
+        }
+        .mobile-navigation {
+            display: none;
+        }
+        
+    }
+    @include lg {
+        .header-navigation {
+            display: none !important;
+        }
+        nav .mobile-navigation {
+            display: inline-flex;
         }
     }
 }

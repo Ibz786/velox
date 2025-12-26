@@ -6,7 +6,7 @@
                 <span>Testimonials</span>
             </h4>
             <h2 class="feature-heading">What do our customers say about us</h2>
-            <p>With over 500 satisfied customers and counting, here Velox we pride ourselves in ensuring that we give you the best service possible</p>
+            <p>With over 500 satisfied customers and counting, here at Velox we pride ourselves in ensuring that we give you the best service possible</p>
 
         </section>
         <div class="testimonials-section-feature-container">

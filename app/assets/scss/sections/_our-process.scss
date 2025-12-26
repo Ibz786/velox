@@ -1,11 +1,12 @@
 .process-section-feature-container {
     position: relative;
-    display: flex;
-    justify-content: flex-end;
+    // display: flex;
+    // justify-content: flex-end;
     margin-top: 3.5em;
 
+    /*
     .stepper {
-        width: 50%;
+        // width: 100%;
     }
     .process-img-container {
         position: absolute;
@@ -17,5 +18,6 @@
             width: 100%;
             transform: scaleX(-1);
         }
-    } 
+    }
+    */
 }
