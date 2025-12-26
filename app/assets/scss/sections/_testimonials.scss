@@ -1,3 +1,5 @@
+@use '../mixins/breakpoints' as *;
+
 .testimonials-section-container {
     // background-color: #ebebeb;
     background-color: #fafafa;
@@ -9,9 +11,12 @@
         display: flex;
         flex-direction: column;
         gap: 2.5em;
-        padding-block: 5em 10em;
+        padding-block: 5em 7.5em;
         mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent 100%);
         overflow: hidden;
+        @include lg {
+            padding-block: 5em;
+        }
 
         .testimonials-section-feature {
             display: flex;

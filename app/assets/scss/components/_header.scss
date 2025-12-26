@@ -22,6 +22,18 @@ header.header {
         margin-inline: auto;
         padding: 15px 24px;
 
+        .header-logo-container {
+            width: 250px;
+            @include lg {
+                width: 185px;
+            }
+
+            > img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
         ul.nav-links {
             display: flex;
             flex-direction: row;

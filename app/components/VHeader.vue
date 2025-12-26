@@ -2,14 +2,16 @@
     <header class="header">
         <nav>
             <section>
-                <img src="/img/vm-logo.png" />
+                <div class="header-logo-container">
+                    <img src="/img/vm-logo.png" />
+                </div>
             </section>
             <ul class="nav-links header-navigation" :class="{'responsive-menu': showResponsiveMenu}">
                 <li>Home</li>
                 <li>About</li>
                 <li>Services</li>
             </ul>
-            <v-button element="a" href="tel:07546595648" class="btn-default uppercase header-navigation">
+            <v-button element="a" href="tel:07546595648" class="btn-default uppercase pulsate header-navigation">
                 <template #prefix-icon><i class="fa-solid fa-phone-volume"></i></template>
                 Call us 24 / 7
             </v-button>

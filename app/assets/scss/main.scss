@@ -5,11 +5,11 @@
     // @include xxl {
     position: relative;
     width: 100%;
-    max-width: min(80%, 80rem);
+    max-width: min(85%, 80rem);
     margin-inline: auto;
     padding: 10em 1.5em;
-    @include xl {
-        padding: 5em 1.5em;
+    @include lg {
+        padding: 5em .75em;
     }
     // }
 }

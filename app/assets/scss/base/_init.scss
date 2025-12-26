@@ -44,7 +44,10 @@ h1 {
     // font-size: clamp(3em, 5vw, 5em);
     font-size: clamp(3.75em, 7vw, 5em);
 }
-h2 { font-size: 4em; }
+h2 {
+    // font-size: 4em;
+    font-size: clamp(2.5em, 4vw, 4em);
+}
 h3 { font-size: 3em; }
 h4 { font-size: 1.5em; }
 h5 { font-size: 1.125em; }

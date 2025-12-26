@@ -15,7 +15,7 @@
                         </template>
                         Get a quote
                     </v-button>
-                    <v-button element="a" href="tel:07546595648" class="btn-default">
+                    <v-button element="a" href="tel:07546595648" class="btn-default pulsate">
                         <template #prefix-icon>
                             <i class="fa-solid fa-phone-volume"></i>
                         </template>
